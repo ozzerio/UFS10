@@ -1,0 +1,142 @@
+
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #40467b; /* Set background color */
+ 
+}
+
+.container {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 0 20px;
+  overflow: hidden; /*CANCELLA I FILM CHE SCROLLANDO ESCONO DAL CONTAINER*/
+}
+
+h1 {
+  text-align: center;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  white-space: nowrap; /* tutto su una riga */
+  animation: scroll 30s linear infinite; /* velocita scrollata */
+  align-items: flex-start;
+}
+
+.movie {
+  display: inline-block;
+  margin-right: 33px;
+  align-items: center;
+  text-align: center;
+  
+
+}
+
+.poster {
+  display: inline-block; 
+  vertical-align: middle; 
+  width: 100px;
+  height: auto;
+}
+
+.title {
+  display: block;
+  text-align: center;
+  margin-top: 2.5px;
+   font-weight: bold;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+@keyframes scroll {
+  0% {
+    transform: translateX(100%); 
+  }
+  100% {
+    transform: translateX(-100%); 
+  }
+}
+
+
+
+
+header {
+  text-align: center;
+  padding: 20px 0;
+  background-image: url('cinema3.jpg');
+  padding-bottom: 200px;
+}
+
+header img {
+  width: 80%; 
+  max-width: 600px; 
+  height: auto; 
+  display: block; 
+  margin: 0 auto;
+  border-radius: 10px; 
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+}
+
+/*1^ META*/
+
+.header-title {
+  color: #fff; 
+  font-size: 24px; 
+  margin-top: 10px;
+}
+
+
+/* CONTAINER ALTO*/
+.container {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 0 20px;
+  background-color: #b6b7ff; 
+  border-radius: 10px; 
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+}
+
+.rating {
+ 
+  text-size-adjust: px;
+  font-style: oblique;
+}
+
+background {
+  background-image: ("assets\images\cinema2.jpg");
+  background-color: #cccccc;
+}
+
+
+
+
+
+
+.movies {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  grid-gap: 20px;
+}
+
+.movie img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+
+.movie h2 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.movie p {
+  font-size: 14px;
+  color: #666;
+  line-height: 1.5;
+}
